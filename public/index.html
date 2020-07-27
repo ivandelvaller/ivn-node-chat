@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- BOOTSTRAP v4.5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cosmo/bootstrap.min.css"
+        crossorigin="anonymous">
+
+    <style>
+        nav {
+            height: 15vh;
+        }
+
+        section {
+            height: 70vh;
+        }
+
+        footer {
+            height: 15vh;
+        }
+
+        form {
+            width: 300px;
+        }
+
+        @media only screen and (min-width: 720px) {
+
+            html,
+            body {
+                font-size: 1rem;
+            }
+
+            nav {
+                height: 20vh;
+            }
+
+            section {
+                height: 60vh;
+            }
+
+            footer {
+                height: 20vh;
+            }
+
+            form {
+                width: 500px;
+            }
+        }
+    </style>
+
+    <!-- FONT AWESOME KIT -->
+    <script src="https://kit.fontawesome.com/cffccf5116.js" crossorigin="anonymous"></script>
+    <title>Chat</title>
+</head>
+
+<body>
+
+    <div class="container-md bg-dark p-0 d-flex flex-column">
+
+        <nav class="navbar navbar-dark bg-primary p-0">
+            <div class="text-white mx-auto align-middle" style="font-size: inherit">
+                <h1 class="display-4">Chat App</h1>
+            </div>
+        </nav>
+
+        <section class="container-md bg-white d-flex d-nowrap justify-content-center">
+            <form class="align-self-center" action="chat.html">
+                <fieldset>
+                    <legend class="display-4 text-center"> Join </legend>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user-circle" aria-hidden="true"></i> </span>
+                        </div>
+                        <input type="text" placeholder="Username" name="username" class="form-control" required>
+                    </div>
+                    <div class="input-group mt-1">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-comment-o" aria-hidden="true"></i> </span>
+                        </div>
+                        <input type="text" placeholder="Room" name="room" class="form-control" required>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-lg btn-block">Enter <i class="fa fa-sign-in"
+                        aria-hidden="true"></i> </button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="d-flex flex-column flex-nowrap bg-white">
+        <div class="text-center">
+            <p>A JavaScript <i class="fab fa-js-square" style="color:rgb(230, 230, 77);"></i> and NodeJs <i class="fab fa-node" style="color:green"></i> application.</p>
+            <p>Created by Iván Del Valle || &copy; 2020</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

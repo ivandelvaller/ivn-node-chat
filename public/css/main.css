@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#friends{
+    display: none;
+}
+
+@media only screen and (min-width: 450px){
+    #friends{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    * {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width:720px){
+    .chat{
+        height: 700px;
+    }
+}
